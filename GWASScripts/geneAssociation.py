@@ -4,6 +4,7 @@ import io
 import os
 import sys
 
+# Function Citation: https://gist.github.com/dceoy/99d976a2c01e7f0ba1c813778f9db744
 def read_vcf(path):
     with open(path, 'r') as f:
         lines = [l for l in f if not l.startswith('##')]
